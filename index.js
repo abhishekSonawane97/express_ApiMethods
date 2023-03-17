@@ -17,12 +17,12 @@ app.get('/calculator', (req, res)=>{
     res.send(`value : ${x}`)
 });
 
-app.put('/calculator/val', (req, res)=>{
+app.put('/calculator', (req, res)=>{
     let newVal = x+(req.body.val);
     res.send(`value : ${newVal}`)
 });
 
-app.delete('/calculator/del', (req, res)=>{
+app.delete('/calculator', (req, res)=>{
     res.send(`value has been reset : ${x}`)
 });
 
@@ -32,7 +32,7 @@ app.get('/todos', (req, res)=>{
     res.send(`Array Items : ${arr}`)
 });
 
-app.post('/todos/addItem', (req, res)=>{
+app.post('/todos', (req, res)=>{
     let newVal = (req.body.val)
     let newArr = arr
     newArr.push(newVal)
