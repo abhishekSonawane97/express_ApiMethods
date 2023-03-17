@@ -17,15 +17,14 @@ app.get('/calculator', (req, res)=>{
     res.send(`value : ${x}`)
 });
 
-app.put('/calculator/:val', (req, res)=>{
-    let newVal = x+Number(req.params.val);
+app.put('/calculator/val', (req, res)=>{
+    let newVal = x+(req.body.val);
     res.send(`value : ${newVal}`)
 });
 
 app.delete('/calculator/del', (req, res)=>{
     res.send(`value has been reset : ${x}`)
 });
-
 
 
 let arr = [11, 22, 33, 44, 55, 66]
