@@ -57,6 +57,5 @@ app.delete('/todos/:ind', (req, res)=>{
     console.log(arr);
     res.send(`value has been deleted, New Array Items : ${arr}`)
 });
-console.log(arr)
 
 app.listen(port, ()=> console.log('server is running on port 2000'))
