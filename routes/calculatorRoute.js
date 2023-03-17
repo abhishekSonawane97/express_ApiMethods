@@ -1,20 +1,6 @@
 const express = require('express')
 const router = express.Router()
 
-// let file = `<h1>Home Page</h1>`;
-
-// router.get('/', (req, res)=>{
-
-//     res.send(file)
-// })
-
-// router.get('/about', (req, res)=>{
-//     console.log('inside about')
-//     res.send('About ')
-// });
-
-
-
 let x = 100;
 
 router.get('/', (req, res)=>{
