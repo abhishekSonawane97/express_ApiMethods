@@ -19,12 +19,10 @@ app.get('/calculator', (req, res)=>{
 
 app.put('/calculator/:val', (req, res)=>{
     let newVal = x+Number(req.params.val);
-    // console.log('modified : ', newVal)
     res.send(`value : ${newVal}`)
 });
 
 app.delete('/calculator/del', (req, res)=>{
-    // console.log('original value : ', x)
     res.send(`value has been reset : ${x}`)
 });
 
@@ -54,7 +52,6 @@ app.delete('/todos/:ind', (req, res)=>{
         }
     }
     arr=  [...newArr];
-    console.log(arr);
     res.send(`value has been deleted, New Array Items : ${arr}`)
 });
 
